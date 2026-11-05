@@ -1,0 +1,17 @@
+@use "../base/base.scss" as *;
+
+.nosotros-main {
+
+
+    text-align: center;
+    margin: 10px;
+}
+
+.nosotros-fit {
+    color: $fitPrimary;
+}
+
+.profes-img {
+        max-width: 100%;
+        object-fit: cover;
+}

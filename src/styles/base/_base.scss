@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans+Palmyrene&display=swap');
+
+$fitPrimary: #F9FF01;
+$trailPrimary: #FFFFFF;
+$bgColor: #121212;
+
+$fit: "Google Sans Flex", sans-serif;
+$trail: "Martel Sans", sans-serif;
+$text: "Noto Sans Palmyrene", sans-serif;
+
+
+body, html {
+    font-family: $text;
+    background-color: #121212;
+    overflow-x: none;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+main {
+    margin: auto;
+}
+
+a {
+
+    text-decoration: none;
+    
+    &active {
+        text-decoration: none;
+    }
+}
