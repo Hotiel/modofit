@@ -35,7 +35,7 @@ function Hero({ title, description, bg, theme }: HeroProps) {
     useGSAP();
 
     return (
-        <div className={`hero ${theme}`}>
+        <div className={`hero ${theme}`} id="inicio">
 
             <video
                 className="hero-video"

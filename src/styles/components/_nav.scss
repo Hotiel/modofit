@@ -4,17 +4,24 @@ nav {
 
     display: flex;
     width: 100dvw;
-    min-height: 30px;
+    min-height: 3rem;
     justify-content: space-evenly;
     align-items: center;
     background-color: none;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
+    border-bottom: 1px solid $trailPrimary;
+    border-radius: 50px;
 
     a {
-
+        margin: auto;
             color: $fitPrimary;
             &active {
                 color: $fitPrimary;
             }
+    }
 
     }
-}
+

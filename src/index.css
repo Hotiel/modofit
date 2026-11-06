@@ -22,9 +22,21 @@ aactive {
   text-align: center;
   position: relative;
   min-height: 100svh;
+  min-width: 100dvw;
   overflow: hidden;
   justify-content: center;
   align-content: center;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(to bottom, transparent 0%, #121212);
+  z-index: 25;
+  pointer-events: none;
 }
 .hero.modofit {
   color: #F9FF01;
@@ -73,6 +85,9 @@ aactive {
   text-align: center;
   margin: 10px;
 }
+.nosotros-main p {
+  color: #FFFFFF;
+}
 
 .nosotros-fit {
   color: #F9FF01;
@@ -83,15 +98,26 @@ aactive {
   object-fit: cover;
 }
 
+.nosotros-contacto .contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 nav {
   display: flex;
   width: 100dvw;
-  min-height: 30px;
+  min-height: 3rem;
   justify-content: space-evenly;
   align-items: center;
   background-color: none;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 50px;
 }
 nav a {
+  margin: auto;
   color: #F9FF01;
 }
 nav aactive {
@@ -99,11 +125,58 @@ nav aactive {
 }
 
 footer {
-  width: 100dvw;
+  min-width: 100dvw;
   min-height: 30dvh;
-  display: flex;
-  justify-content: center;
   text-align: center;
+  border-top: 1px solid #FFFFFF;
+}
+footer h4 {
+  width: 100%;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  color: #F9FF01;
+}
+
+.footer-main {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.footer-main h5 {
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  margin-bottom: 0.7rem;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.nav-footer a {
+  text-align: start;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-bottom: 0.7rem;
+}
+.nav-footer a:active {
+  color: #FFFFFF;
+}
+
+.contact-footer {
+  max-width: 50%;
+  text-align: end;
+  color: #FFFFFF;
+}
+
+.footer-copy {
+  margin-top: 2rem;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=index.css.map */
