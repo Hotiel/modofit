@@ -8,7 +8,7 @@ function HomeFit() {
             <Hero 
             title={<>MODO <br /> FIT</>}
             description="Entrená distinto"
-            bg="videos/fitbg.mp4"
+            bg="videos/fitbg2.mp4"
             theme="modofit"/>
 
             <NosotrosFit />

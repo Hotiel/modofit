@@ -7,7 +7,7 @@ function HomeTrail() {
             <Hero 
             title={<>MODO <br /> TRAIL RUN</>}
             description="Bienvenidx a la montaña"
-            bg="videos/trailbg.mp4"
+            bg="videos/trailbg2.mp4"
             theme="modotrail"/>
         </div>
     )
