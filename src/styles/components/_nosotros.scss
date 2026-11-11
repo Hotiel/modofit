@@ -26,4 +26,9 @@
         display: flex;
         justify-content: space-evenly;
     }
+    iframe{
+        border: none;
+        max-height: 90dvh;
+        margin: 1rem auto;
+    }
 }

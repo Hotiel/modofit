@@ -1,0 +1,92 @@
+@use "../base/base" as *;
+
+.faqfit-container {
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.AccordionRoot {
+    max-width: 100%;
+    margin: 10px;
+    transition: .3s ease all;
+}
+
+.AccordionItem {
+    
+    max-height: 100%;
+    border-bottom: 1px solid $trailPrimary;
+    transition: .3s ease all;
+}
+
+.AccordionTrigger{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: $trail;
+    font-size: 1.1rem;
+    background-color: $bgColor;
+    color: $trailPrimary;
+    border: none;
+    
+    transition: .3s ease all;
+
+
+    &[data-state="open"] {
+        color: $fitPrimary;
+        transition: 0.3s ease;
+    }
+    &[data-state="closed"] {
+        transition: 0.3s ease;
+    }
+}
+
+.AccordionContent {
+    background-color: $bgColor;
+    color: $trailPrimary;
+    padding: 3px 10px;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+    transition: .3s ease all;
+}
+
+
+.AccordionTrigger[data-state="open"] svg {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease
+}
+
+.AccordionTrigger[data-state="closed"] svg {
+    transition: transform 0.3s ease
+}
+
+
+
+
+.AccordionContent[data-state="open"] {
+	animation: slideDown .3s ease;
+}
+.AccordionContent[data-state="closed"] {
+	animation: slideUp .3s ease;
+}
+
+
+
+@keyframes slideDown {
+	from {
+		height: 0;
+	}
+	to {
+		height: var(--radix-accordion-content-height);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		height: var(--radix-accordion-content-height);
+	}
+	to {
+		height: 0;
+	}
+}

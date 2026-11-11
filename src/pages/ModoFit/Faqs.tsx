@@ -1,7 +1,9 @@
+import FaqFitAccordion from "../../components/Accordion/Accordion";
+
 function FitFaqs (){
     return(
-        <div>
-            Fit Faqs
+        <div className="faqfit-container">
+            <FaqFitAccordion/>
         </div>
     )
 }

@@ -1,4 +1,6 @@
 import Hero from "../../components/Hero/Hero";
+import ContactFit from "./Contact";
+import FitFaqs from "./Faqs";
 import NosotrosFit from "./Nosotros";
 
 function HomeFit() {
@@ -12,6 +14,20 @@ function HomeFit() {
             theme="modofit"/>
 
             <NosotrosFit />
+
+            <div className="pattern">
+                <div className="pattern-blur"></div>
+                <img src="images/pattern.jpg" alt="divider img" />
+            </div>
+            
+            <ContactFit />
+
+            <div className="pattern">
+                <div className="pattern-blur"></div>
+                <img src="images/pattern.jpg" alt="divider img" />
+            </div>
+
+            <FitFaqs />
         </div>
     )
 }
